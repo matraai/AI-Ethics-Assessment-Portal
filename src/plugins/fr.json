@@ -1,0 +1,232 @@
+{
+    "riskArea": "Secteur de risque",
+    "noOfQuestions": "Nombre de questions",
+    "projectScore": "Cote du projet",
+    "maximumScore": "Cote maximale",
+    "mitigationArea": "Secteur d'atténuation",
+    "showHelp": "Afficher l'aide",
+    "startAgain": "Recommencer",
+    "version": "Version: 0.10.0",
+    "exportEnglishResults": "Exporter un document en anglais",
+    "exportFrenchResults": "Exporter un document français",
+    "frenchContent": "Contenu français",
+    "englishContent": "Contenu en anglais",
+    "export": "Exporter",
+    "loadFile": "Cliquez pour charger un fichier JSON précédemment enregistré",
+    "localSaveWarning": "Les informations contenues dans l'EIA ne sont stockées que localement sur votre ordinateur et le gouvernement du Canada n'a pas accès aux informations que vous placez dans l'outil. Si vous souhaitez conserver votre travail, veuillez enregistrer les données localement pour une utilisation future en utilisant le bouton 'Sauvegarder'. Vous pouvez importer un formulaire EIA précédemment enregistré en utilisant le bouton 'Importer un fichier JSON'.",   
+    "swtchLang": "English",
+    "onThisPage": "Sur cette page",
+    "jsonFileUpload":"Importer un fichier JSON",
+    "htmlCode": "fr-CA",
+    "saveButton": "Sauvegarder",
+    "appTitle": "Évaluation de l'incidence algorithmique",
+    "selectSection" :"Sélectionnez une section",
+    "navigateSectionLabel":"Accédez à une page spécifique (sur 13)",
+    "linkProjectText": "Lien vers le répertoire GitHub du projet",
+    "pageProgressBar":" sur 13",
+    "linkProjectAnchor": "https://github.com/canada-ca/aia-eia-js",
+    "linkDirective": "http://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=32592",
+    "print": "Imprimer",
+    "sectionBusinessDriverImpact":"Raisons de l'automatisation",
+    "riskProfile": "Profil de risque",
+    "projectAuthority": "Autorité de projet",
+    "aboutTheSystem":"À propos du système",
+    "aboutTheAlgorithm":"À propos de l'algorithme",
+    "aboutDecision": "À propos de la décision",
+    "impactAssessment": "Évaluation de l'incidence",
+    "aboutTheData": "À propos des données",
+    "consultations": "Consultations",
+    "deRiskingAndMitigationMeasuresDQ": "Élimination des risques et mesures d'atténuation - Qualité des données",
+    "deRiskingAndMitigationMeasuresPF": "Élimination des risques et mesures d'atténuation - Équité procédurale",
+    "deRiskingAndMitigationMeasuresP":  "Élimination des risques et mesures d'atténuation - Confidentialité",
+    "otherRequirementsTitle": "Autres exigences",
+    "otherRequirements": "La Directive sur la prise de décisions automatisée comprend également d'autres exigences qui doivent être respectées pour tous les niveaux d'incidences.",
+    "linkDirectiveText": "Lien vers la Directive sur la prise de décisions automatisée",
+    "contactAtipForPia": "Contactez le bureau de l'AIPRP de votre établissement pour discuter de l'exigence d'une évaluation des facteurs relatifs à la vie privée conformément à la Directive sur l'évaluation des facteurs relatifs à la vie privée.",
+    "riskLevel": "Niveau d'incidence",
+    "currentScore": "Cote actuelle",
+    "rawRiskScore": "Cote d'incidence brute",
+    "mitigationScore": "Cote d'atténuation",
+    "resultTitle": "Résultats de l'évaluation de l'incidence algorithmique",
+    "resultScore": "Cote finale",
+    "resultSectionQA": "Questions et réponses",
+    "resultSectionPD": "Détails du projet",
+    "resultSectionRQA": "Questions et réponses liées aux risques",
+    "resultSectionMQA": "Questions et réponses liées aux mesures d'atténuation",
+    "alertNotificationPopUp": "Type de fichier correct: fichier JSON chargé avec succès",
+    "alertNotificationWrongPopUp": "Type de fichier incorrect: veuillez soumettre un fichier JSON",
+    "alertConfirmRestart": "Cette action effacera toutes les données non enregistrées. Êtes-vous sûr de vouloir continuer ?",
+    "modifier": "Points",
+    "openSourceDesign1": "Le système utilisera des logiciels libres.",
+    "consultationDesign1": "Les intervenants internes suivants seront consultés:",
+    "consultationDesign2": "liste à venir",
+    "consultationDesign3": "Les intervenants externes suivants seront consultés:",
+    "consultationDesign4": "liste à venir",
+    "dataQualityDesign1": "Des processus documentés seront en place pour tester les ensembles de données par rapport aux biais et autres résultats inattendus.",
+    "dataQualityDesign2": "Ces informations seront rendues publiques.",
+    "dataQualityDesign3": "Des documents montrant comment les problèmes de qualité des données ont été résolus au cours du processus de conception seront élaborés.",
+    "dataQualityDesign4": "Ces informations seront rendues publiques.",
+    "dataQualityDesign5": "Une analyse comparative entre les sexes sera effectuée par rapport aux données utilisées par le système.",
+    "dataQualityDesign6": "Ces informations seront rendues publiques.",
+    "dataQualityDesign7": "La responsabilité de la conception, de l'élaboration, de l'entretien et de l'amélioration du système sera attribuée.",
+    "dataQualityDesign8": "Des processus documentés seront en place pour gérer le risque que des données périmées ou non fiables soient utilisées par le système.",
+    "dataQualityDesign9": "Ces informations seront rendues publiques.",
+    "dataQualityDesign10": "Toutes les données utilisées par le système seront affichées sur le Portail du gouvernement ouvert.",
+    "fairnessDesign1": "La piste de vérification identifiera le pouvoir ou l'autorité déléguée identifié dans la loi.",
+    "fairnessDesign2": "Le système fournira un rapport de vérification qui consignera toutes les recommandations ou décisions prises par le système.",
+    "fairnessDesign3": "Les principaux points de décision seront identifiés dans la piste d'audit.",
+    "fairnessDesign4": "Tous les points de décision clés seront liés à la législation, aux politiques et aux procédures pertinentes.",
+    "fairnessDesign5": "Un journal sera tenu, détaillant toutes les modifications apportées au modèle et au système.",
+    "fairnessDesign6": "Une piste de vérification énonçant clairement tous les points de décision pris par le système sera élaborée.",
+    "fairnessDesign7": "La piste de vérification pourrait être utilisée pour produire un avis ou un énoncé des motifs pour chaque décision qu'elle appuie.",
+    "fairnessDesign8": "La piste de vérification permettra de déterminer quelles versions du système ont été utilisées pour chacune des décisions qu'elle appuie.",
+    "fairnessDesign9": "La piste de vérification montrera qui est le décideur autorisé.",
+    "fairnessDesign10": "Le système sera en mesure de produire les motifs de ses décisions ou de ses recommandations au besoin.",
+    "fairnessDesign11": "Il y aura un processus en place pour accorder, surveiller et révoquer les permissions d'accès au système.",
+    "fairnessDesign12": "Il y aura un mécanisme en place pour recueillir les commentaires des utilisateurs du système.",
+    "fairnessDesign13": "Un processus de ressourcement sera établi pour les clients qui souhaitent contester la décision.",
+    "fairnessDesign14": "Le système permettra à une personne de passer outre aux décisions du système.",
+    "fairnessDesign15": "Il y aura un processus pour consigner les cas où des dérogations ont été effectuées.",
+    "fairnessDesign16": "La piste de vérification comprendra des processus de contrôle des changements pour consigner les modifications apportées au fonctionnement ou au rendement du système.",
+    "fairnessDesign17": "Un cas conceptuel sera élaboré et présenté au Comité d'examen de l'architecture d'entreprise du gouvernement du Canada.",
+    "privacyDesign1": "Une évaluation des facteurs relatifs à la vie privée sera entreprise ou l'EFVP existante sera révisée.",
+    "privacyDesign2": "Le système reflétera les principes de la protection de la vie privée dès la conception.",
+    "openSourceImplementation1": "Le système utilise des logiciels libres.",
+    "consultationImplementation1": "Les intervenants internes suivants ont été consultés:",
+    "consultationImplementation2": "liste à venir",
+    "consultationImplementation3": "Les intervenants externes suivants ont été consultés:",
+    "consultationImplementation4": "liste à venir",
+    "dataQualityImplementation1": "Un processus documenté est actuellement en place pour tester les ensembles de données par rapport aux biais et autres résultats inattendus.",
+    "dataQualityImplementation2": "Cette information est maintenant accessible au public.",
+    "dataQualityImplementation3": "Un processus a été élaboré pour documenter la façon dont les problèmes de qualité des données ont été résolus au cours du processus de conception.",
+    "dataQualityImplementation4": "Cette information est maintenant accessible au public.",
+    "dataQualityImplementation5": "Une analyse comparative entre les sexes a été effectuée sur les données qui seront utilisées par le système.",
+    "dataQualityImplementation6": "Cette information est maintenant accessible au public.",
+    "dataQualityImplementation7": "Les responsabilités relatives à la conception, à l'élaboration, à l'entretien et aux améliorations du système ont été attribuées.",
+    "dataQualityImplementation8": "Un processus a été mis au point pour gérer le risque que des données désuètes ou non fiables puissent être utilisées dans le système.",
+    "dataQualityImplementation9": "Cette information est maintenant accessible au public.",
+    "dataQualityImplementation10": "Les données utilisées pour le système ont été affichées sur le portail du Government Ouvert.",
+    "fairnessImplementation1": "La piste de vérification indique clairement le pouvoir ou l'autorité déléguée, tel qu'il est défini dans la loi.",
+    "fairnessImplementation2": "Le système enregistre toutes les recommandations ou décisions prises par le système.",
+    "fairnessImplementation3": "Tous les points de décision clés sont identifiables dans la piste d'audit.",
+    "fairnessImplementation4": "Tous les points de décision clés sont liés à la législation, à la politique ou à la procédure pertinente.",
+    "fairnessImplementation5": "Un journal des modifications a été élaboré pour détailler toutes les modifications apportées au modèle et au système.",
+    "fairnessImplementation6": "La piste de vérification du système indique tous les points de décision pris par le système.",
+    "fairnessImplementation7": "La piste d'audit générée par le système peut être utilisée pour générer des avis, y compris un exposé des motifs.",
+    "fairnessImplementation8": "La piste de vérification indique quelle version du système a été utilisée pour chaque décision.",
+    "fairnessImplementation9": "La piste de vérification du système indique qui sont les décideurs autorisés.",
+    "fairnessImplementation10": "Le système est en mesure de produire les motifs de sa décision ou de ses recommandations au besoin.",
+    "fairnessImplementation11": "Un processus est en place pour accorder, surveiller et révoquer l'autorisation d'accès au système.",
+    "fairnessImplementation12": "Il existe un mécanisme pour recueillir les commentaires des utilisateurs des systèmes.",
+    "fairnessImplementation13": "Un processus de recours est en place pour les clients qui souhaitent contester la décision.",
+    "fairnessImplementation14": "Le système permet à l'homme de passer outre aux décisions du système.",
+    "fairnessImplementation15": "Il y a un processus en place pour consigner les cas où des dérogations ont été effectuées.",
+    "fairnessImplementation16": "La piste de vérification du système comprend des processus de contrôle des changements pour enregistrer les modifications apportées au fonctionnement ou au rendement du système.",
+    "fairnessImplementation17": "Un dossier conceptuel a été préparé pour le Comité d'examen de l'architecture d'entreprise du gouvernement du Canada.",
+    "privacyImplementation1": "Une évaluation des facteurs relatifs à la vie privée a été effectuée ou une EFVP existante a été révisée.",
+    "privacyImplementation2": "Le système a été conçu en tenant compte des principes de la protection de la vie privée par la conception.",
+    "IL": "NI",
+    "CS": "CA",
+    "RS": "CIB",
+    "MS": "CA",
+    "requirements": {
+        "title": "Section 2: Exigences spécifiques au niveau d'incidence",
+        "elements": [{
+                "title": "Examen par les pairs",
+                "elements": [{
+                    "text": "Aucune"
+                }, {
+                    "text": "Consulter au moins un des experts suivants et publier l’examen complet ou un résumé en langage clair des conclusions sur un site Web du gouvernement du Canada : \n\nexpert qualifié d’une institution gouvernementale fédérale, provinciale, territoriale ou municipale \nmembres qualifiés d’une faculté d’un établissement postsecondaire \nchercheurs qualifiés d’une organisation non gouvernementale pertinente \ntiers fournisseur contractuel avec une spécialisation pertinente \nun comité consultatif des données et d’automatisation spécifié par le Secrétariat du Conseil du Trésor du Canada \n\n\nOU \nPublier les spécifications du système décisionnel automatisé dans une revue à comité de lecture. Lorsque l’accès à la revue publiée est restreint, veiller à ce qu’un résumé des conclusions en langage clair soit librement accessible."
+                }, {
+                    "text": "Consulter au moins un des experts suivants et publier l’examen complet ou un résumé en langage clair des conclusions sur un site Web du gouvernement du Canada : \n\nexpert qualifié d’une institution gouvernementale fédérale, provinciale, territoriale ou municipale \nmembres qualifiés d’une faculté d’un établissement postsecondaire \nchercheurs qualifiés d’une organisation non gouvernementale pertinente \ntiers fournisseur contractuel avec une spécialisation pertinente \nun comité consultatif des données et d’automatisation spécifié par le Secrétariat du Conseil du Trésor du Canada \n\n\nOU \nPublier les spécifications du système décisionnel automatisé dans une revue à comité de lecture. Lorsque l’accès à la revue publiée est restreint, veiller à ce qu’un résumé des conclusions en langage clair soit librement accessible."
+                }, {
+                    "text": "Consulter au moins deux des experts suivants et publier l’examen complet ou un résumé en langage clair des conclusions sur un site Web du gouvernement du Canada : \n\nexperts qualifiés du Conseil national de recherches du Canada, de Statistique Canada ou du Centre pour la sécurité des télécommunications \nmembres qualifiés d’une faculté d’un établissement postsecondaire \nchercheurs qualifiés d’une organisation non gouvernementale pertinente \ntiers fournisseur contractuel avec une spécialisation pertinente \nun comité consultatif des données et d’automatisation spécifié par le Secrétariat du Conseil du Trésor du Canada. \n\n\nOU \nPublier les  spécifications du système décisionnel automatisé dans une revue à comité de lecture. Lorsque l’accès à la revue publiée est restreint, veiller à ce qu’un résumé des conclusions en langage clair soit librement accessible."
+                }]
+            },
+            {
+                "title": "Analyse comparative entre les sexes plus",
+                "elements": [{
+                    "text": "Aucune"
+                }, {
+                    "text": "S’assurer que l’analyse comparative entre les sexes plus aborde les questions suivantes : \n\nles incidences du projet d’automatisation (y compris le système, les données et la décision) sur le genre et/ou d’autres facteurs d’identité; \nles mesures prévues ou existantes pour faire face aux risques identifiés par l’analyse comparative entre les sexes plus."
+                }, {
+                    "text": "S’assurer que l’analyse comparative entre les sexes plus aborde les questions suivantes : \n\nles incidences du projet d’automatisation (y compris le système, les données et la décision) sur le genre et/ou d’autres facteurs d’identité; \nles mesures prévues ou existantes pour faire face aux risques identifiés par l’analyse comparative entre les sexes plus."
+                }, {
+                    "text": "S’assurer que l’analyse comparative entre les sexes plus aborde les questions suivantes : \n\nles incidences du projet d’automatisation (y compris le système, les données et la décision) sur le genre et/ou d’autres facteurs d’identité; \nles mesures prévues ou existantes pour faire face aux risques identifiés par l’analyse comparative entre les sexes plus."
+                }]
+            },
+            {
+                "title": "Avis",
+                "elements": [{
+                    "text": "Aucune"
+                }, {
+                    "text": "Avis en langage simple fourni par l’entremise de tous les modes de prestation de services utilisés (Internet, en personne, par courrier, par téléphone)."
+                }, {
+                    "text": "Fournir un avis en langage simple par l’entremise de tous les modes de prestation de services utilisés (Internet, en personne, par courrier, par téléphone). De plus, publier de la documentation sur les sites Web pertinents au sujet du système décisionnel automatisé, en langage simple, décrivant : \n\nle fonctionnement des composants; \nla façon dont il appuie la décision administrative; \nles résultats de tout examen ou audit; \nune description des données d’apprentissage ou un lien vers les données d’apprentissage anonymisées si ces données sont accessibles au public."
+                }, {
+                    "text": "Fournir un avis en langage simple par l’entremise de tous les modes de prestation de services utilisés (Internet, en personne, par courrier, par téléphone). De plus, publier de la documentation sur les sites Web pertinents au sujet du système décisionnel automatisé, en langage simple, décrivant : \n\nle fonctionnement des composants; \nla façon dont il appuie la décision administrative; \nles résultats de tout examen ou audit; \nune description des données d’apprentissage ou un lien vers les données d’apprentissage anonymisées si ces données sont accessibles au public."
+                }]
+            },
+            {
+                "title": "Maillon humain de la prise de décisions",
+                "elements": [{
+                    "text": "Des décisions peuvent être prises sans participation humaine directe."
+                }, {
+                    "text": "Des décisions peuvent être prises sans participation humaine directe."
+                }, {
+                    "text": "Des décisions ne peuvent être prises sans qu’il y ait des points d’intervention humaine précis pendant le processus décisionnel.\nLa décision définitive doit être prise par un humain."
+                }, {
+                    "text": "Des décisions ne peuvent être prises sans qu’il y ait des points d’intervention humaine précis pendant le processus décisionnel.\nLa décision définitive doit être prise par un humain."
+                }]
+            },
+            {
+                "title": "Explication",
+                "elements": [{
+                    "text": "En plus de toute exigence juridique applicable, s’assurer qu’une explication significative des résultats communs des décisions soit publiée. L’explication doit fournir une description générale des points suivants : \n\nle rôle du système dans le processus de décision;  \nles données d’entrée, leur source et leur méthode de collecte;  \nles critères utilisés pour évaluer les données d’entrée et les opérations appliquées pour les traiter;  \nle résultat produit par le système et toute information pertinente nécessaire pour l’interpréter dans le contexte de la décision administrative; \nles principaux facteurs à l’origine d’une décision. \n\n\nLes explications doivent également fournir des renseignements aux clients sur les possibilités de recours pertinentes, le cas échéant. \nLes descriptions doivent être offertes en langage clair par l’entremise de l’évaluation de l’incidence algorithmique et être repérables sur le site Web de l’institution."
+                }, {
+                    "text": "En plus de toute exigence juridique applicable, s’assurer qu’une explication significative est fournie au client avec toute décision qui entraîne le refus de prestation ou service, ou qui implique une autre mesure réglementaire. L’explication doit fournir des renseignements au client, en langage clair, sur ce qui suit : \n\nle rôle du système dans le processus de décision; \nles données d’apprentissage et relatives aux clients, leur source et leur méthode de collecte, le cas échéant; \nles critères utilisés pour évaluer les données des clients et les opérations appliquées pour les traiter; \nle résultat produit par le système et toute information pertinente nécessaire pour l’interpréter dans le contexte de la décision administrative; \nune justification de la décision administrative, y compris les principaux facteurs qui l’ont motivée. \n\n\nLes explications doivent également fournir des renseignements aux clients sur les possibilités de recours pertinentes, le cas échéant. \nUne description générale de ces éléments doit également être mise à disposition par l’entremise de l’évaluation de l’incidence algorithmique et être repérable sur le site Web de l’institution."
+                }, {
+                    "text": "En plus de toute exigence juridique applicable, s’assurer qu’une explication significative est fournie au client avec toute décision qui entraîne le refus de prestation ou service, ou qui implique une autre mesure réglementaire. L’explication doit fournir des renseignements au client, en langage clair, sur ce qui suit : \n\nle rôle du système dans le processus de décision; \nles données d’apprentissage et relatives aux clients, leur source et leur méthode de collecte, le cas échéant; \nles critères utilisés pour évaluer les données des clients et les opérations appliquées pour les traiter; \nle résultat produit par le système et toute information pertinente nécessaire pour l’interpréter dans le contexte de la décision administrative; \nune justification de la décision administrative, y compris les principaux facteurs qui l’ont motivée. \n\n\nLes explications doivent également fournir des renseignements aux clients sur les possibilités de recours pertinentes, le cas échéant. \nUne description générale de ces éléments doit également être mise à disposition par l’entremise de l’évaluation de l’incidence algorithmique et être repérable sur le site Web de l’institution."
+                }, {
+                    "text": "En plus de toute exigence juridique applicable, s’assurer qu’une explication significative est fournie au client avec toute décision qui entraîne le refus de prestation ou service, ou qui implique une autre mesure réglementaire. L’explication doit fournir des renseignements au client, en langage clair, sur ce qui suit : \n\nle rôle du système dans le processus de décision; \nles données d’apprentissage et relatives aux clients, leur source et leur méthode de collecte, le cas échéant; \nles critères utilisés pour évaluer les données des clients et les opérations appliquées pour les traiter; \nle résultat produit par le système et toute information pertinente nécessaire pour l’interpréter dans le contexte de la décision administrative; \nune justification de la décision administrative, y compris les principaux facteurs qui l’ont motivée. \n\n\nLes explications doivent également fournir des renseignements aux clients sur les possibilités de recours pertinentes, le cas échéant. \nUne description générale de ces éléments doit également être mise à disposition par l’entremise de l’évaluation de l’incidence algorithmique et être repérable sur le site Web de l’institution."
+                }]
+            },
+            {
+                "title": "Formation",
+                "elements": [{
+                    "text": "Aucune"
+                }, {
+                    "text": "Documents sur la conception et la fonctionnalité du système."
+                }, {
+                    "text": "Documents sur la conception et la fonctionnalité du système.\nIl faut suivre des cours de formation."
+                }, {
+                    "text": "Documents sur la conception et la fonctionnalité du système.\nCours de formation récurrents.\nUn moyen de vérifier que la formation a été suivie."
+                }]
+            },
+            {
+                "title": "Gestion de la TI et de la continuité des activités",
+                "elements": [{
+                    "text": "Aucune"
+                }, {
+                    "text": "Aucune"
+                }, {
+                    "text": "Veiller à ce que des stratégies de récupération du système, des plans pour la continuité des activités et/ou de sauvegarde des mesures de sécurité pertinents soient établis en coordination avec les responsables désignés en cas d’indisponibilité du système décisionnel automatisé."
+                }, {
+                    "text": "Veiller à ce que des stratégies de récupération du système, des plans pour la continuité des activités et/ou de sauvegarde des mesures de sécurité pertinents soient établis en coordination avec les responsables désignés en cas d’indisponibilité du système décisionnel automatisé."
+                }]
+            },
+            {
+                "title": "Approbation de l’exploitation du système",
+                "elements": [{
+                    "text": "Aucune"
+                }, {
+                    "text": "Aucune"
+                }, {
+                    "text": "Administrateur général"
+                }, {
+                    "text": "Conseil du Trésor"
+                }]
+            }
+        ]
+    }
+}
