@@ -1,5 +1,5 @@
 # build stage
-FROM node:16-alpine as build-stage
+FROM node:16-alpine AS build-stage
 
 # Install Python and build dependencies
 RUN apk add --no-cache python3 make g++ 
@@ -13,7 +13,7 @@ COPY . .
 RUN npm run build
 
 # production stage
-FROM nginx:stable-alpine as production-stage
+FROM nginx:stable-alpine AS production-stage
 COPY --from=build-stage /app/dist /usr/share/nginx/html
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
