@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+import RiskAssessmentDashboard from "../components/RiskAssessmentDashboard.vue";
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
+  <main class="min-h-screen bg-gray-50">
+    <RiskAssessmentDashboard />
   </main>
 </template>
