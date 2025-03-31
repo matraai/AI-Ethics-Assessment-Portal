@@ -7,9 +7,9 @@
       <article
         v-for="(item, index) in items"
         :key="index"
-        class="w-full border border-b"
+        class="w-full border border-b px-4"
       >
-        <header class="flex flex-wrap gap-5 justify-between">
+        <header class="flex flex-wrap gap-5 justify-between mt-4">
           <h3 class="self-start text-base font-medium leading-none text-black">
             {{ item.title }}
           </h3>

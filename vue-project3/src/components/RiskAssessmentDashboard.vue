@@ -6,7 +6,7 @@
       <div class="flex flex-col w-full bg-gray-50">
         <Header />
 
-        <main class="z-10 self-center px-3.5 py-9 w-full max-w-screen-xl">
+        <main class="z-10 px-3.5 py-9 w-full">
           <section class="flex flex-col pt-0.5 pb-3 w-full">
             <h1 class="self-start text-2xl font-bold leading-none text-black">
               Risk Assessment Overview
