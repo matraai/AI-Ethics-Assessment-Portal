@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@builder.io/dev-tools": "^1.6.16",
+    "@builder.io/sdk-vue": "^4.0.6"
+  }
+}
