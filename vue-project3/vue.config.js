@@ -1,4 +1,4 @@
 // vue.config.js
 module.exports = {
-    publicPath: '/AI-Ethics-Assessment/vue_project3/'
+    publicPath: '/AI-Ethics-Assessment-Portal/vue-project3/'
 }
