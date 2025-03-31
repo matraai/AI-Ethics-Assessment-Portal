@@ -4,12 +4,6 @@
 
 /* @import './base.css'; */
 
-/* TEMPORARY TEST */
-div {
-  border: 1px solid red !important;
-}
-/* END TEMPORARY TEST */
-
 #app {
   max-width: 1280px;
   margin: 0 auto;
