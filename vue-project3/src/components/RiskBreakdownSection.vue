@@ -14,14 +14,16 @@
             {{ item.title }}
           </h3>
           <span
-            class="px-3 py-2.5 text-sm text-amber-700 bg-amber-100 rounded-full"
+            :class="riskLevelClass(item.riskLevel)"
+            class="px-3 py-2.5 text-sm rounded-full"
           >
             {{ item.riskLevel }}
           </span>
         </header>
         <div class="flex flex-col items-start mt-4 bg-gray-200 rounded-full">
           <div
-            class="flex h-2.5 bg-amber-500 rounded-full"
+            class="flex h-2.5 rounded-full"
+            :class="barColorClass(item.riskLevel)"
             :style="{ width: `${item.percentage}%` }"
           ></div>
         </div>
@@ -52,9 +54,36 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue';
 import type { RiskBreakdownItemProps } from "./types";
 
 defineProps<{
   items: readonly RiskBreakdownItemProps[];
 }>();
+
+const riskLevelClass = (riskLevel: string) => {
+  switch (riskLevel.toLowerCase()) {
+    case 'high risk':
+      return 'text-red-500 bg-red-100';
+    case 'medium risk':
+      return 'text-amber-500 bg-amber-100';
+    case 'low risk':
+      return 'text-emerald-500 bg-emerald-100';
+    default:
+      return '';
+  }
+};
+
+const barColorClass = (riskLevel: string) => {
+  switch (riskLevel.toLowerCase()) {
+    case 'high risk':
+      return 'bg-red-500';
+    case 'medium risk':
+      return 'bg-amber-500';
+    case 'low risk':
+      return 'bg-emerald-500';
+    default:
+      return '';
+  }
+};
 </script>
