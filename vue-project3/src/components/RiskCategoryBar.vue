@@ -29,7 +29,7 @@ const riskLevelClass = computed(() => {
     case "medium risk":
       return "font-semibold text-amber-500";
     case "low risk":
-      return "font-semibold text-blue-500";
+      return "font-semibold text-emerald-500";
     default:
       return "";
   }
@@ -42,7 +42,7 @@ const barColorClass = computed(() => {
     case "medium risk":
       return "bg-amber-500";
     case "low risk":
-      return "bg-blue-500";
+      return "bg-emerald-500";
     default:
       return "";
   }

@@ -17,28 +17,28 @@
                 <div class="w-full md:w-3/12">
                   <StatisticsCard
                     title="Overall Risk"
-                    value="78%"
-                    status="High"
+                    :value="`${assessmentStore.statistics.overallRiskPercent}%`"
+                    :status="assessmentStore.statistics.overallRiskLevel"
                   />
                 </div>
                 <div class="w-full md:w-3/12">
                   <StatisticsCard
                     title="High Risk Factors"
-                    value="12"
+                    :value="assessmentStore.statistics.highRiskFactorCount.toString()"
                     icon="https://cdn.builder.io/api/v1/image/assets/TEMP/6f422df992f4ebf4b294ab2a055ecc5778f19ab4?placeholderIfAbsent=true&apiKey=c4a26b41dfb84ff28723655a292abe66"
                   />
                 </div>
                 <div class="w-full md:w-3/12">
                   <StatisticsCard
                     title="Medium risk Factors"
-                    value="28"
+                    :value="assessmentStore.statistics.mediumRiskFactorCount.toString()"
                     icon="https://cdn.builder.io/api/v1/image/assets/TEMP/523f987fad3777e74dd9869baea87db3f8229602?placeholderIfAbsent=true&apiKey=c4a26b41dfb84ff28723655a292abe66"
                   />
                 </div>
                 <div class="w-full md:w-3/12">
                   <StatisticsCard
                     title="Low Risk Factors"
-                    value="45"
+                    :value="assessmentStore.statistics.lowRiskFactorCount.toString()"
                     icon="https://cdn.builder.io/api/v1/image/assets/TEMP/7220e09c965bc8ab593f2da9033b2f6114a59491?placeholderIfAbsent=true&apiKey=c4a26b41dfb84ff28723655a292abe66"
                   />
                 </div>
@@ -51,34 +51,11 @@
               </h2>
               <div class="mt-6">
                 <RiskCategoryBar
-                  name="Procedural Risk"
-                  riskLevel="High Risk"
-                  :percentage="85"
-                />
-                <RiskCategoryBar
-                  name="Data Source"
-                  riskLevel="Medium Risk"
-                  :percentage="60"
-                />
-                <RiskCategoryBar
-                  name="Stakeholder Consultation"
-                  riskLevel="Low Risk"
-                  :percentage="30"
-                />
-                <RiskCategoryBar
-                  name="Data Quality"
-                  riskLevel="High Risk"
-                  :percentage="75"
-                />
-                <RiskCategoryBar
-                  name="Procedural Fairness"
-                  riskLevel="Medium Risk"
-                  :percentage="50"
-                />
-                <RiskCategoryBar
-                  name="Privacy"
-                  riskLevel="Low Risk"
-                  :percentage="34"
+                  v-for="(category, index) in assessmentStore.riskCategories"
+                  :key="index"
+                  :name="category.name"
+                  :riskLevel="category.riskLevel"
+                  :percentage="category.percentage"
                 />
               </div>
             </section>
@@ -152,8 +129,12 @@
           </div>
 
           <RiskBreakdownSection
-            :items="riskBreakdownItems"
+            :items="assessmentStore.riskBreakdownItems"
           />
+
+          <button @click="triggerUpdate" class="mt-4 p-2 bg-blue-500 text-white rounded">
+            Simulate Form Update
+          </button>
         </main>
 
         <Footer />
@@ -163,6 +144,8 @@
 </template>
 
 <script setup lang="ts">
+import { useAssessmentStore } from '@/stores/assessment';
+
 import Header from "./Header.vue";
 import Footer from "./Footer.vue";
 import StatisticsCard from "./StatisticsCard.vue";
@@ -171,44 +154,9 @@ import RiskFactorCard from "./RiskFactorCard.vue";
 import RecommendedActionCard from "./RecommendedActionCard.vue";
 import RiskBreakdownSection from "./RiskBreakdownSection.vue";
 
-const riskBreakdownItems = [
-  {
-    title: 'Data Source',
-    riskLevel: 'Medium Risk',
-    percentage: 70,
-    factors: [
-      {
-        icon: 'https://cdn.builder.io/api/v1/image/assets/TEMP/432747a084d723a2bb0909d40ade8494f735c7ee?placeholderIfAbsent=true&apiKey=c4a26b41dfb84ff28723655a292abe66',
-        title: 'Data Sensitivity',
-        description: 'Personal information collected by model in deployment and training is highly sensative',
-        type: 'warning'
-      },
-      {
-        icon: 'https://cdn.builder.io/api/v1/image/assets/TEMP/0001bd67f6ba5c852fc8b68196dc1fe3e8b130dc?placeholderIfAbsent=true&apiKey=c4a26b41dfb84ff28723655a292abe66',
-        title: 'Data Collection Consent',
-        description: 'Proper processes has been put in place to ensure consent of people\\\'s data for model training/testing',
-        type: 'success'
-      }
-    ]
-  },
-  {
-    title: 'Procedural Fairness',
-    riskLevel: 'Medium Risk',
-    percentage: 70,
-    factors: [
-      {
-        icon: 'https://cdn.builder.io/api/v1/image/assets/TEMP/9ab1b954a839992731a46722047ceeae4a2a184c?placeholderIfAbsent=true&apiKey=c4a26b41dfb84ff28723655a292abe66',
-        title: 'Data Sensitivity',
-        description: 'Personal information collected by model in deployment and training is highly sensative',
-        type: 'warning'
-      },
-      {
-        icon: 'https://cdn.builder.io/api/v1/image/assets/TEMP/0ca98a100faeb92d48e39a62a626279ef120fbe3?placeholderIfAbsent=true&apiKey=c4a26b41dfb84ff28723655a292abe66',
-        title: 'Data Collection Consent',
-        description: 'Proper processes has been put in place to ensure consent of people\\\'s data for model training/testing',
-        type: 'success'
-      }
-    ]
-  }
-] as const;
+const assessmentStore = useAssessmentStore();
+
+function triggerUpdate() {
+  assessmentStore.updateAssessment({ formId: 'testForm', data: { q1: 'answer1' } });
+}
 </script>

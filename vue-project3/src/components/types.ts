@@ -25,6 +25,6 @@ export interface RiskBreakdownItemProps {
     icon: string;
     title: string;
     description: string;
-    type: "warning" | "success";
+    type: "warning" | "success" | "low" | "medium" | "high";
   }[];
 }
