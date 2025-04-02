@@ -64,7 +64,37 @@ export const useAssessmentStore = defineStore('assessment', () => {
       factors: [                // Placeholder factors
         {
           icon: 'https://via.placeholder.com/16/FF0000/FFFFFF?text=!', // Placeholder icon
-          title: 'Placeholder Factor 1',
+          title: 'Public & Legal Sensitivity Risk',
+          description: 'Details about procedural risk factor 1.',
+          type: 'warning'
+        },
+        {
+          icon: 'https://via.placeholder.com/16/FF0000/FFFFFF?text=!', // Placeholder icon
+          title: 'Workforce & Organizational Impact Risk',
+          description: 'Details about procedural risk factor 1.',
+          type: 'warning'
+        },
+        {
+          icon: 'https://via.placeholder.com/16/FF0000/FFFFFF?text=!', // Placeholder icon
+          title: 'Transparency & Explainability Risk',
+          description: 'Details about procedural risk factor 1.',
+          type: 'warning'
+        },
+        {
+          icon: 'https://via.placeholder.com/16/FF0000/FFFFFF?text=!', // Placeholder icon
+          title: 'Decision Autonomy & Human Oversight Risk',
+          description: 'Details about procedural risk factor 1.',
+          type: 'warning'
+        },
+        {
+          icon: 'https://via.placeholder.com/16/FF0000/FFFFFF?text=!', // Placeholder icon
+          title: 'Impact Duration & Reversibility Risk',
+          description: 'Details about procedural risk factor 1.',
+          type: 'warning'
+        },
+        {
+          icon: 'https://via.placeholder.com/16/FF0000/FFFFFF?text=!', // Placeholder icon
+          title: 'Individual & Societal Impact Risk',
           description: 'Details about procedural risk factor 1.',
           type: 'warning'
         }
@@ -77,13 +107,25 @@ export const useAssessmentStore = defineStore('assessment', () => {
       factors: [
         {
           icon: 'https://cdn.builder.io/api/v1/image/assets/TEMP/432747a084d723a2bb0909d40ade8494f735c7ee?placeholderIfAbsent=true&apiKey=c4a26b41dfb84ff28723655a292abe66',
-          title: 'Data Sensitivity',
+          title: 'Personal Information & Privacy Risk',
           description: 'Personal information collected by model in deployment and training is highly sensative',
           type: 'warning'
         },
         {
           icon: 'https://cdn.builder.io/api/v1/image/assets/TEMP/0001bd67f6ba5c852fc8b68196dc1fe3e8b130dc?placeholderIfAbsent=true&apiKey=c4a26b41dfb84ff28723655a292abe66',
-          title: 'Data Collection Consent',
+          title: 'Data Security, Ownership & Integration Risk',
+          description: 'Proper processes has been put in place to ensure consent of people\'s data for model training/testing',
+          type: 'success'
+        },
+        {
+          icon: 'https://cdn.builder.io/api/v1/image/assets/TEMP/0001bd67f6ba5c852fc8b68196dc1fe3e8b130dc?placeholderIfAbsent=true&apiKey=c4a26b41dfb84ff28723655a292abe66',
+          title: ' Data integration Risk',
+          description: 'Proper processes has been put in place to ensure consent of people\'s data for model training/testing',
+          type: 'success'
+        },
+        {
+          icon: 'https://cdn.builder.io/api/v1/image/assets/TEMP/0001bd67f6ba5c852fc8b68196dc1fe3e8b130dc?placeholderIfAbsent=true&apiKey=c4a26b41dfb84ff28723655a292abe66',
+          title: 'Data Format & Processing Risk',
           description: 'Proper processes has been put in place to ensure consent of people\'s data for model training/testing',
           type: 'success'
         }
@@ -96,7 +138,13 @@ export const useAssessmentStore = defineStore('assessment', () => {
       factors: [                   
         {
           icon: 'https://via.placeholder.com/16/00FF00/FFFFFF?text=✓', // Placeholder icon
-          title: 'Consultation Factor 1',
+          title: 'Internal Stakeholder Engagement Risk',
+          description: 'Details about stakeholder consultation factor 1.',
+          type: 'success'
+        },
+        {
+          icon: 'https://via.placeholder.com/16/00FF00/FFFFFF?text=✓', // Placeholder icon
+          title: 'External Stakeholder Engagement Risk',
           description: 'Details about stakeholder consultation factor 1.',
           type: 'success'
         }
@@ -109,7 +157,19 @@ export const useAssessmentStore = defineStore('assessment', () => {
       factors: [                   
         {
           icon: 'https://via.placeholder.com/16/FF0000/FFFFFF?text=!', // Placeholder icon
-          title: 'Quality Factor 1',
+          title: 'Bias & Fairness Risk',
+          description: 'Details about data quality factor 1.',
+          type: 'warning'
+        },
+        {
+          icon: 'https://via.placeholder.com/16/FF0000/FFFFFF?text=!', // Placeholder icon
+          title: 'Data Documentation & Transparency Risk',
+          description: 'Details about data quality factor 1.',
+          type: 'warning'
+        },
+        {
+          icon: 'https://via.placeholder.com/16/FF0000/FFFFFF?text=!', // Placeholder icon
+          title: 'Accountability & Maintenance Risk',
           description: 'Details about data quality factor 1.',
           type: 'warning'
         }
@@ -122,13 +182,19 @@ export const useAssessmentStore = defineStore('assessment', () => {
       factors: [
         {
           icon: 'https://cdn.builder.io/api/v1/image/assets/TEMP/9ab1b954a839992731a46722047ceeae4a2a184c?placeholderIfAbsent=true&apiKey=c4a26b41dfb84ff28723655a292abe66',
-          title: 'Data Sensitivity', // Note: Copied from other section, might need unique factors
+          title: 'Transparency & Accountability Risk', 
           description: 'Personal information collected by model in deployment and training is highly sensative',
           type: 'warning'
         },
         {
           icon: 'https://cdn.builder.io/api/v1/image/assets/TEMP/0ca98a100faeb92d48e39a62a626279ef120fbe3?placeholderIfAbsent=true&apiKey=c4a26b41dfb84ff28723655a292abe66',
-          title: 'Data Collection Consent', // Note: Copied from other section, might need unique factors
+          title: 'Process justification & Explanation Risk', 
+          description: 'Proper processes has been put in place to ensure consent of people\'s data for model training/testing',
+          type: 'success'
+        },
+        {
+          icon: 'https://cdn.builder.io/api/v1/image/assets/TEMP/0ca98a100faeb92d48e39a62a626279ef120fbe3?placeholderIfAbsent=true&apiKey=c4a26b41dfb84ff28723655a292abe66',
+          title: 'Access Control & User Feedback Risk', 
           description: 'Proper processes has been put in place to ensure consent of people\'s data for model training/testing',
           type: 'success'
         }
@@ -141,8 +207,14 @@ export const useAssessmentStore = defineStore('assessment', () => {
       factors: [                   
         {
           icon: 'https://via.placeholder.com/16/00FF00/FFFFFF?text=✓', // Placeholder icon
-          title: 'Privacy Factor 1',
+          title: 'Privacy Compliance and Design Risk',
           description: 'Details about privacy factor 1.',
+          type: 'success'
+        },
+        {
+          icon: 'https://cdn.builder.io/api/v1/image/assets/TEMP/0ca98a100faeb92d48e39a62a626279ef120fbe3?placeholderIfAbsent=true&apiKey=c4a26b41dfb84ff28723655a292abe66',
+          title: 'Data Privacy Control and Safeguard Risk', 
+          description: 'Proper processes has been put in place to ensure consent of people\'s data for model training/testing',
           type: 'success'
         }
       ] 

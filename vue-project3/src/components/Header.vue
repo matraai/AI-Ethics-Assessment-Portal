@@ -16,10 +16,10 @@
         <nav
           class="flex gap-6 self-stretch py-1.5 my-auto text-base leading-none text-black-600"
         >
-          <a href="#" class="grow text-black">Dashboard</a> <!-- Add text-black class -->
-          <a href="#" class="text-black">Assessments</a> <!-- Add text-black class -->
-          <a href="#" class="text-black">Reports</a> <!-- Add text-black class -->
-          <a href="#" class="text-black">Settings</a> <!-- Add text-black class -->
+          <a href="#" class="grow text-black">Dashboard</a>
+          <a href="#" class="text-black">Assessments</a>
+          <a href="#" class="text-black">Reports</a>
+          <a href="#" class="text-black">Settings</a>
         </nav>
         <img
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/be593e1f54667115d987fcbcf9ab961a6441eaf8?placeholderIfAbsent=true&apiKey=c4a26b41dfb84ff28723655a292abe66"
